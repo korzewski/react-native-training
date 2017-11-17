@@ -4,6 +4,7 @@ import com.facebook.react.ReactPackage;
 import java.util.Arrays;
 import java.util.List;
 import com.reactnativenavigation.NavigationApplication;
+import com.oblador.vectoricons.VectorIconsPackage;
 
 public class MainApplication extends NavigationApplication {
 
@@ -17,7 +18,7 @@ public class MainApplication extends NavigationApplication {
     // Add additional packages you require here
     // No need to add RnnPackage and MainReactPackage
     return Arrays.<ReactPackage>asList(
-            // eg. new VectorIconsPackage()
+        new VectorIconsPackage()
     );
   }
 

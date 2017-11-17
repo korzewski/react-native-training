@@ -1,21 +1,29 @@
 import React, { Component } from 'react';
 import {
-  Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  Button,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons'
 
-export default class App extends Component<{}> {
+export default class SingleScreen extends Component<{}> {
   render() {
       
     return (
       <View style={styles.container}>
-        <Icon name="stars" size={100} />
+        <Icon name="home" size={100} />
+      
+        <Text style={styles.welcome}>
+            Single screen
+        </Text>
       </View>
     );
   }
+}
+
+function openTabsScreen() {
+    console.log('openTabsScreen')
 }
 
 const styles = StyleSheet.create({

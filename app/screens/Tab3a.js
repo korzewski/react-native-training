@@ -14,16 +14,21 @@ export default class App extends Component<{}> {
       <View style={styles.container}>
         <Icon name="bug-report" size={100} />
         
-        <Button title="Show bug report" onPress={openBugReport.bind(this)} />
+        <Text style={styles.report}>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quam ipsum maxime, doloribus dolor quos, obcaecati asperiores dolores recusandae omnis quibusdam magni, laboriosam voluptates, aperiam vitae. Qui corporis, reiciendis debitis!
+          .....
+        </Text>
+        
+        <Button title="Show more details" onPress={openMoreDetails.bind(this)} />
       </View>
     );
   }
 }
 
-function openBugReport() {
+function openMoreDetails() {
     this.props.navigator.push({
-        screen: 'example.tab3a',
-        title: 'Bug report',
+        screen: 'example.tab3b',
+        title: 'Bug report - more details',
         animationType: 'fade',
     });
 }
@@ -35,9 +40,10 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
-    fontSize: 40,
+  report: {
+    fontSize: 20,
     textAlign: 'center',
+    padding: 20,
     margin: 10,
   },
 });

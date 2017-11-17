@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
 import {
-  Platform,
   StyleSheet,
   Text,
-  View
+  View,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons'
 
-export default class App extends Component<{}> {
+export default class Drawer extends Component<{}> {
   render() {
       
     return (
       <View style={styles.container}>
-        <Icon name="stars" size={100} />
+        <Icon name="compare-arrows" size={100} />
+      
+        <Text style={styles.welcome}>
+            {this.props.title}
+        </Text>
       </View>
     );
   }

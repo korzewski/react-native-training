@@ -3,6 +3,23 @@ import {registerScreens} from './screens'
 
 registerScreens()
 
+// Navigation.startSingleScreenApp({
+//     screen: {
+//         screen: 'example.singleScreen',
+//         title: 'singleScreen',
+//     },
+//     drawer: {
+//         left: {
+//           screen: 'example.drawer',
+//           passProps: {title: 'Left Drawer!'},
+//         },
+//         right: {
+//           screen: 'example.drawer',
+//           passProps: {title: 'Right Drawer!'}
+//         },
+//     },
+// });
+
 Navigation.startTabBasedApp({
     appStyle: {
         orientation: 'portrait',
